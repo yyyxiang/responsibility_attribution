@@ -81,23 +81,23 @@ pdf('figS5.pdf', onefile = T, width = 12, height = 8)
 line_plots_counterfactual(dat, model_predictions, '1b')
 dev.off()
 
-# figS8
-pdf('figS8.pdf', onefile = T, width = 12, height = 8)
-line_plots_production(dat, model_predictions, '2a')
-dev.off()
-
 # figS9
 pdf('figS9.pdf', onefile = T, width = 12, height = 8)
-line_plots_production(dat, model_predictions, '2b')
+line_plots_production(dat, model_predictions, '2a')
 dev.off()
 
 # figS10
 pdf('figS10.pdf', onefile = T, width = 12, height = 8)
-line_plots_counterfactual(dat, model_predictions, '2a')
+line_plots_production(dat, model_predictions, '2b')
 dev.off()
 
 # figS11
 pdf('figS11.pdf', onefile = T, width = 12, height = 8)
+line_plots_counterfactual(dat, model_predictions, '2a')
+dev.off()
+
+# figS12
+pdf('figS12.pdf', onefile = T, width = 12, height = 8)
 line_plots_counterfactual(dat, model_predictions, '2b')
 dev.off()
 
