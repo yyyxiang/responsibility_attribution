@@ -155,8 +155,8 @@ cor_plt <- function(data, x, y, ymin, ymax, text_data) {
   )
 }
 
-## Supplement: Line plots of production-style models
-line_plots_production <- function(dat, model_predictions, idx) {
+## Supplement: Line plots of actual models
+line_plots_actual <- function(dat, model_predictions, idx) {
   
   subplot_a1 <- plt_data(dat %>% filter(exp_index == idx & s1==s2), 'contestant', 'resp')
   subplot_a2 <- plt_model_predictions(model_predictions %>% filter(exp_index == idx & s1==s2), 'contestant', 'resp_F')
