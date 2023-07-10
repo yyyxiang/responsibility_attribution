@@ -63,12 +63,12 @@ model_predictions <- model_predictions %>% mutate(type = case_when(s1 == s2 ~ 'S
 
 # figS2
 pdf('figS2.pdf', onefile = T, width = 12, height = 8)
-line_plots_production(dat, model_predictions, '1a')
+line_plots_actual(dat, model_predictions, '1a')
 dev.off()
 
 # figS3
 pdf('figS3.pdf', onefile = T, width = 12, height = 8)
-line_plots_production(dat, model_predictions, '1b')
+line_plots_actual(dat, model_predictions, '1b')
 dev.off()
 
 # figS4
@@ -83,12 +83,12 @@ dev.off()
 
 # figS9
 pdf('figS9.pdf', onefile = T, width = 12, height = 8)
-line_plots_production(dat, model_predictions, '2a')
+line_plots_actual(dat, model_predictions, '2a')
 dev.off()
 
 # figS10
 pdf('figS10.pdf', onefile = T, width = 12, height = 8)
-line_plots_production(dat, model_predictions, '2b')
+line_plots_actual(dat, model_predictions, '2b')
 dev.off()
 
 # figS11
