@@ -155,7 +155,7 @@ cor_plt <- function(data, x, y, ymin, ymax, text_data) {
   )
 }
 
-## Supplement: Line plots of actual models
+## Supplement: Line plots of actual-contribution models
 line_plots_actual <- function(dat, model_predictions, idx) {
   
   subplot_a1 <- plt_data(dat %>% filter(exp_index == idx & s1==s2), 'contestant', 'resp')
@@ -220,7 +220,7 @@ line_plots_actual <- function(dat, model_predictions, idx) {
   )
 }
 
-## Supplement: Line plots of counterfactual-style models
+## Supplement: Line plots of counterfactual-contribution models
 line_plots_counterfactual <- function(dat, model_predictions, idx) {
   
   subplot_a1 <- plt_data(dat %>% filter(exp_index == idx & s1==s2), 'contestant', 'resp')
