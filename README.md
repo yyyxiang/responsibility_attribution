@@ -1,5 +1,5 @@
 # responsibility_attribution
-Code and data for: Xiang, Y., Landy, J., Cushman, F.A., Velez, N., & Gershman, S.J. (in press). Actual and counterfactual effort contribute to responsibility attributions in collaborative tasks. _Cognition._
+Code and data for: Xiang, Y., Landy, J., Cushman, F.A., Velez, N., & Gershman, S.J. (2023). Actual and counterfactual effort contribute to responsibility attributions in collaborative tasks. _Cognition,_ 241, 105609.
 
 Preprint: https://psyarxiv.com/jc3hk/
 
