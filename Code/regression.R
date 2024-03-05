@@ -2,7 +2,7 @@ library('tidyverse')
 library('lmerTest')
 source('helper.R')
 
-dat <- read.csv('data.csv', header = T, stringsAsFactors = T)
+dat <- read.csv('./../Data/data.csv', header = T, stringsAsFactors = T)
 model_predictions <- generate_model_predictions(dat)
 dat <- merge(dat, model_predictions) %>% 
   dplyr::rename(resp_data = resp)
