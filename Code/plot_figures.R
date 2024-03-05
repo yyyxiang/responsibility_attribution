@@ -4,7 +4,7 @@ library('Rmisc')
 library('lmerTest')
 source('helper.R')
 
-dat <- read.csv('data.csv', header = T, stringsAsFactors = T)
+dat <- read.csv('./../Data/data.csv', header = T, stringsAsFactors = T)
 model_predictions <- generate_model_predictions(dat)
 dat$contestant <- as.factor(dat$contestant)
 model_predictions$contestant <- as.factor(model_predictions$contestant)
@@ -33,7 +33,7 @@ line_plots(dat, model_predictions, '2b')
 dev.off()
 
 # fig4a BIC (across participants)
-dat <- read.csv('data.csv', header = T, stringsAsFactors = T)
+dat <- read.csv('./../Data/data.csv', header = T, stringsAsFactors = T)
 model_predictions <- generate_model_predictions(dat)
 dat <- merge(dat, model_predictions) %>% 
   dplyr::rename(resp_data = resp)
@@ -138,7 +138,7 @@ dev.off()
 # fig5
 pdf('fig5.pdf', onefile = T, width = 12, height = 15)
 
-dat <- read.csv('data.csv', header = T, stringsAsFactors = T)
+dat <- read.csv('./../Data/data.csv', header = T, stringsAsFactors = T)
 model_predictions <- generate_model_predictions(dat)
 
 dat_summary <- dat %>%
