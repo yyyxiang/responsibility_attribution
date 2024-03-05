@@ -5,7 +5,7 @@ library('lmerTest')
 source('helper.R')
 
 # figS1
-dat <- read.csv('data.csv', header = T, stringsAsFactors = T)
+dat <- read.csv('./../Data/data.csv', header = T, stringsAsFactors = T)
 equal_weighting <- ensemble_models(dat, 0.5) %>% dplyr::rename(resp_EBA_equal = resp_EBA)
 unequal_weighting1 <- ensemble_models(dat, 0.3) %>% dplyr::rename(resp_EBA_unequal1 = resp_EBA) %>% select(resp_EBA_unequal1)
 unequal_weighting2 <- ensemble_models(dat, 0.4) %>% dplyr::rename(resp_EBA_unequal2 = resp_EBA) %>% select(resp_EBA_unequal2)
@@ -53,7 +53,7 @@ figS1 + labs(x = 'Model', y = 'Data')
 dev.off()
 
 ## line plots
-dat <- read.csv('data.csv', header = T, stringsAsFactors = T)
+dat <- read.csv('./../Data/data.csv', header = T, stringsAsFactors = T)
 model_predictions <- generate_model_predictions(dat)
 dat$contestant <- as.factor(dat$contestant)
 model_predictions$contestant <- as.factor(model_predictions$contestant)
@@ -105,7 +105,7 @@ dev.off()
 # figS6
 pdf('figS6.pdf', onefile = T, width = 12, height = 15)
 
-dat <- read.csv('data.csv', header = T, stringsAsFactors = T)
+dat <- read.csv('./../Data/data.csv', header = T, stringsAsFactors = T)
 model_predictions <- generate_model_predictions(dat)
 
 dat_summary <- dat %>%
@@ -144,7 +144,7 @@ dev.off()
 # figS7
 pdf('figS7.pdf', onefile = T, width = 12, height = 15)
 
-dat <- read.csv('data.csv', header = T, stringsAsFactors = T)
+dat <- read.csv('./../Data/data.csv', header = T, stringsAsFactors = T)
 model_predictions <- generate_model_predictions(dat)
 
 dat_summary <- dat %>%
